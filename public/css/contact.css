@@ -1,0 +1,125 @@
+.contact {
+  padding: 30px 0 60px;
+}
+.contact__title{
+  margin-bottom: 30px;
+}
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__info{
+margin-right: 70px;
+}
+.contact__item  {
+  margin-bottom: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+.contact__item::after{
+  content: '';
+  width: 310px;
+  height: 3px;
+  background-image:url(../images/line-2.svg);
+  position: absolute;
+  background-repeat:no-repeat;
+  left: 0;
+  bottom: -18px;
+}
+.contact__item + .contact__item::after{
+  background-image:url(../images/line-3.svg);
+}
+.contact__item + .contact__item + .contact__item::after{
+  background-image:url(../images/line-2.svg);
+}
+.contact__item-title{
+
+  margin-bottom: 5px;
+}
+.contact__item::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 32px;
+  font-weight: 900;
+  content: "\f3c5";
+  width: 50px;
+  height: 50px;
+  left: -35px;
+  top: 28px;
+  position: absolute;
+}
+.contact__item + .contact__item::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 28px;
+  font-weight: 900;
+  content: "\f879";
+  width: 50px;
+  height: 50px;
+  left: -35px;
+  top: 28px;
+  position: absolute;
+}
+.contact__item +.contact__item + .contact__item::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 28px;
+  font-weight: 900;
+  content: "\f0e0";
+  width: 50px;
+  height: 50px;
+  left: -35px;
+  top: 28px;
+  position: absolute;
+}
+
+
+
+
+
+
+.contact__form,
+.consultation__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39.2px;
+  width: 500px;
+}
+.contact__form-title {
+  margin-bottom: 25px;
+}
+.contact__form input,
+.contact__form textarea,
+.consultation__form input,
+.consultation__form textarea {
+  background-color: #d9f5ce;
+}
+.input,
+.contact__form-btn,
+.consultation__form-btn {
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: inherit;
+}
+.contact__form-message,
+.consultation__form-message {
+  max-height: 90px;
+  resize: none;
+  overflow: auto;
+}
+.input:focus {
+  outline: none !important;
+  border: 1px solid #5ac430;
+  box-shadow: 0 0 10px #5ac430;
+}
+
+.contact__form-btn,
+.consultation__form-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #5ac430;
+  border-radius: 30px;
+  border: none;
+  padding: 12px 15px;
+  width: 130px;
+  font-weight: 500;
+  margin-top: 15px;
+}

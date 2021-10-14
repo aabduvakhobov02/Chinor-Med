@@ -17,12 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
-    <link
-      rel="stylesheet"
-      href="./owlcarousel/assets/owl.theme.default.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <section class="preheader">
@@ -36,11 +31,19 @@
           </div>
           <div class="preheader__lang">
             <label class="preheader__lang-label" for="language">Language</label>
-            <select name="language" class="preheader__lang-dropdown">
-              <option value="english">English</option>
-              <option value="uzbek">Uzbekcha</option>
-              <option value="russian">Russian</option>
-            </select>
+            <div class="preheader__lang-drop">
+              <p class="preheader__lang-first">
+                Russian <i class="fas fa-chevron-circle-down"></i>
+              </p>
+              <ul class="preheader__lang-list modal__hidden">
+                <li class="preheader__lang-item">
+                  <a href="./en/news.html">English</a>
+                </li>
+                <li class="preheader__lang-item">
+                  <a href="./uz/news.html">Uzbek</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -49,24 +52,27 @@
       <div class="container">
         <div class="header__inner">
           <a href="#" class="logo a">
-            <img class="logo__img" src="images/logo.png" alt="logo" />
+            <img class="logo__img" src="../images/logo.png" alt="logo" />
           </a>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__list-link a" href="index.html">HOME</a>
+                <a class="menu__list-link a" href="#">ГЛАВНАЯ</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link a" href="about.html">ABOUT US</a>
+                <a class="menu__list-link a" href="about.html">О НАС</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link a" href="service.html">SERVICES</a>
+                <a class="menu__list-link a" href="service.html">УСЛУГИ</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link a" href="#">TESTIMONALS</a>
+                <a class="menu__list-link a" href="testimonals.html">ГАЛЕРЕЯ</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link a" href="#">CONTACT</a>
+                <a class="menu__list-link a" href="about.html">НОВОСТИ</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="contact.html">КОНТАКТЫ</a>
               </li>
             </ul>
           </nav>
@@ -97,27 +103,24 @@
         <p class="modal__text">
           Fill the form to recieve an online consultation
         </p>
-        <form class="consultation__form" action="appointment.php">
+        <form class="consultation__form" action="submit">
           <input
             class="consultation__form-name input"
-            name="name"
             type="text"
             placeholder="Name"
           />
           <input
             class="consultation__form-email input"
-            name="email"
             type="text"
             placeholder="Email"
           />
           <input
             class="consultation__form-subject input"
-            name="subject"
             type="text"
             placeholder="Subject"
           />
           <textarea
-            name="message"
+            name="Message"
             cols="10"
             rows="10"
             class="consultation__form-message input"
@@ -130,84 +133,15 @@
         </form>
       </div>
     </div>
-    <section class="contact">
-      <div class="container">
-        <div class="nav__breadcrumb">
-          <a href="index.html" class="nav__home a"> HOME </a>
-          <i class="fas fa-chevron-right"> </i>
-          <a href="#" class="nav__current a"> CONTACT </a>
-        </div>
-        <h1 class="contact__title h1 title">Contact Us</h1>
-        <div class="contact__inner">
-          <form class="contact__form" method="post" action="appointment.php">
-            <h3 class="contact__form-title h3">Make An Appointment</h3>
-            <input
-              class="contact__form-name input"
-              type="text"
-              placeholder="Name"
-            />
-            <input
-              class="contact__form-email input"
-              type="text"
-              placeholder="Email"
-            />
-            <input
-              class="contact__form-subject input"
-              type="text"
-              placeholder="Subject"
-            />
-            <textarea
-              name="Message"
-              cols="10"
-              rows="10"
-              class="contact__form-message input"
-              type="text"
-              placeholder="Message"
-            ></textarea>
-            <button class="contact__form-btn button" type="submit">
-              SUBMIT
-            </button>
-          </form>
-          <div class="contact__info">
-            <div class="contact__item">
-              <h3 class="contact__item-title h3">Location</h3>
-              <p class="contact__item-text">Tashkent, Kamashi passage 1, 3</p>
-            </div>
 
-            <div class="contact__item">
-              <h3 class="contact__item-title h3">Call</h3>
-              <p class="contact__item-text">+998 90-000-00-00</p>
-            </div>
-            <div class="contact__item">
-              <h3 class="contact__item-title h3">Email</h3>
-              <p class="contact__item-text">info@loremipsum.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="location">
-      <div class="location__inner">
-        <h4 class="location__pretitle h4">Find Us At</h4>
-        <h2 class="location__title title h2">Location</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d553.1917371418248!2d69.31160042688717!3d41.31643141771793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef52ea3348233%3A0x5c3a0b5a376bd7ef!2zQ0hJTk9SLCDQo9C30LHQtdC60YHQutC-LdCY0L3QtNC40LnRgdC60LjQuSDQnNC10LTQuNGG0LjQvdGB0LrQuNC5INCm0LXQvdGC0YA!5e0!3m2!1sen!2s!4v1624533665439!5m2!1sen!2s"
-          width="100%"
-          height="400"
-          style="border: 0"
-          allowfullscreen="true"
-          loading="lazy"
-        ></iframe>
-      </div>
-    </section>
+    <section class="gallery"></section>
 
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__info">
             <a href="#" class="logo">
-              <img class="logo__img" src="images/logo.png" alt="logo" />
+              <img class="logo__img" src="../images/logo.png" alt="logo" />
             </a>
             <p class="footer__info-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ma xime
@@ -274,10 +208,12 @@
                 <a href="gallery.html" class="footer__menu-link a">Галерея</a>
               </li>
               <li class="footer__menu-item">
-                <a href="news.html" class="footer__menu-link a">Новости</a>
+                <a href="#" class="footer__menu-link a">Новости</a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a">Связаться с нами</a>
+                <a href="contact.html" class="footer__menu-link a"
+                  >Связаться с нами</a
+                >
               </li>
             </ul>
           </div>
@@ -294,6 +230,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

@@ -27,11 +27,17 @@
               <label class="preheader__lang-label" for="language"
                 >Language</label
               >
-              <select name="language" class="preheader__lang-dropdown">
-                <option value="english">English</option>
-                <option value="uzbek">Uzbek</option>
-                <option value="russian">Russian</option>
-              </select>
+              <div class="preheader__lang-drop">
+                <p class="preheader__lang-first">English <i class="fas fa-chevron-circle-down"></i></p>
+                <ul class="preheader__lang-list modal__hidden">
+                  <li class="preheader__lang-item">
+                    <a href="../service.html">Russian</a>
+                  </li>
+                  <li class="preheader__lang-item">
+                    <a href="../uz/service.html">Uzbek</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             
           </div>
@@ -44,24 +50,27 @@
               <img class="logo__img" src="../images/logo.png" alt="logo" />
             </a>
             <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__list-link a" href="index.html">HOME</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link a" href="about.html">ABOUT US</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link a" href="#">SERVICES</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link a" href="#">TESTIMONALS</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link a" href="contact.html">CONTACT</a>
-                </li>
-              </ul>
-            </nav>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="index.html">HOME</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="about.html">ABOUT US</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="#">SERVICES</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="gallery.html">GALLERY</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="news.html">NEWSLETTER</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
             <div class="forms">
               <div class="appointment">
                 <a class="appointment__link a" href="contact.html">
@@ -347,19 +356,23 @@
             <h3 class="footer__menu-title h3">Links</h3>
             <ul class="footer__list">
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a"> Services </a>
+                <a href="index.html" class="footer__menu-link a"> Home </a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a"> Our Staff </a>
+                <a href="about.html" class="footer__menu-link a"> About Us </a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a"> Contact Us </a>
+                <a href="services.html" class="footer__menu-link a"> Services </a>
+              </li>
+              
+              <li class="footer__menu-item">
+                <a href="gallery.html" class="footer__menu-link a"> Gallery </a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a"> Testimonals </a>
+                <a href="news.html" class="footer__menu-link a"> Newsletter </a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a"> About Us </a>
+                <a href="contact.html" class="footer__menu-link a"> Contact Us </a>
               </li>
             </ul>
           </div>

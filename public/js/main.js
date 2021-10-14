@@ -102,6 +102,19 @@ for (let i = 0; i < list.length; i++) {
 //   });
 // });
 
+//language dropdown
+
+const firstLang = document.querySelectorAll(".preheader__lang-first");
+const langDrop = document.querySelectorAll(".preheader__lang-list");
+firstLang.forEach((lang) => {
+  lang.addEventListener("click", (e) => {
+    e.preventDefault();
+    langDrop.forEach((drop) => {
+      drop.classList.toggle("modal__hidden");
+    });
+  });
+});
+
 //Modal
 const modal = document.querySelector(".modal");
 const toggleModal = () => {
@@ -141,6 +154,8 @@ document.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
+
+//Counter
 
 const counters = document.querySelectorAll(".exp__item-number");
 const speed = 1000;
@@ -225,3 +240,26 @@ navigate(psLink, 0, arr);
 navigate(gsLink, 1, arr);
 navigate(entLink, 2, arr);
 navigate(uziLink, 3, arr);
+
+// Sending appointment
+
+const forms = document.querySelectorAll("form"),
+  statusText = forms.querySelector(".consultation__form-btn");
+
+forms.forEach((form) => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "../appointment.php", true);
+    xhr.onload = () => {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        let response = xhr.response;
+        console.log(response);
+      }
+    };
+
+    let formData = new FormData();
+    xhr.send(formData);
+  });
+});

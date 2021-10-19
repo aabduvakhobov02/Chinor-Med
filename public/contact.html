@@ -35,12 +35,20 @@
             </a>
           </div>
           <div class="preheader__lang">
-            <label class="preheader__lang-label" for="language">язык</label>
-            <select name="language" class="preheader__lang-dropdown">
-              <option value="english">английский</option>
-              <option value="uzbek">узбекский</option>
-              <option value="russian">русский</option>
-            </select>
+            <label class="preheader__lang-label" for="language">Language</label>
+            <div class="preheader__lang-drop">
+              <p class="preheader__lang-first">
+                Русский <i class="fas fa-chevron-circle-down"></i>
+              </p>
+              <ul class="preheader__lang-list modal__hidden">
+                <li class="preheader__lang-item">
+                  <a href="./uz/contact.html">Узбекский</a>
+                </li>
+                <li class="preheader__lang-item">
+                  <a href="./en/contact.html">Английский</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -63,10 +71,13 @@
                 <a class="menu__list-link a" href="service.html">УСЛУГИ</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link a" href="#">ОТЗЫВЫ</a>
+                <a class="menu__list-link a" href="gallery.html">ГАЛЕРЕЯ</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link a" href="#">КОНТАКТЫ</a>
+                <a class="menu__list-link a" href="news.html">НОВОСТИ</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="contact.html">КОНТАКТЫ</a>
               </li>
             </ul>
           </nav>
@@ -97,11 +108,7 @@
         <p class="modal__text">
           Заполните форму, чтобы получить онлайн-консультацию
         </p>
-        <form
-          class="consultation__form"
-          method="POST"
-          action="./appointment.php"
-        >
+        <form class="consultation__form" action="appointment.php">
           <input
             class="consultation__form-name input"
             name="name"
@@ -128,11 +135,7 @@
             type="text"
             placeholder="Message"
           ></textarea>
-          <button
-            class="consultation__form-btn button"
-            type="РАЗМЕСТИТЬ"
-            value="SEND MESSAGE"
-          >
+          <button class="consultation__form-btn button" type="submit">
             РАЗМЕСТИТЬ
           </button>
         </form>
@@ -147,7 +150,7 @@
         </div>
         <h1 class="contact__title h1 title">Связаться с нами</h1>
         <div class="contact__inner">
-          <form class="contact__form" action="#">
+          <form class="contact__form" method="post" action="appointment.php">
             <h3 class="contact__form-title h3">Записаться на прием</h3>
             <input
               class="contact__form-name input"
@@ -269,19 +272,22 @@
             <h3 class="footer__menu-title h3">Ссылки</h3>
             <ul class="footer__list">
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a"> Услуги </a>
+                <a href="index.html" class="footer__menu-link a">Главная</a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a">Наши сотрудники </a>
+                <a href="about.html" class="footer__menu-link a">О нас</a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a"> Связаться с нами </a>
+                <a href="service.html" class="footer__menu-link a">Услуги</a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a"> Отзывы </a>
+                <a href="gallery.html" class="footer__menu-link a">Галерея</a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link a">О нас </a>
+                <a href="news.html" class="footer__menu-link a">Новости</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link a">Связаться с нами</a>
               </li>
             </ul>
           </div>
@@ -296,8 +302,8 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
       integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer">
-    </script>
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>

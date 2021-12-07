@@ -115,45 +115,45 @@ firstLang.forEach((lang) => {
   });
 });
 
-//Modal
-const modal = document.querySelector(".modal");
-const toggleModal = () => {
-  modal.classList.toggle("modal__hidden");
-};
+// //Modal
+// const modal = document.querySelector(".modal");
+// const toggleModal = () => {
+//   modal.classList.toggle("modal__hidden");
+// };
 
-const closeModal = () => {
-  toggleModal();
-  document.body.style.overflow = "";
-};
+// const closeModal = () => {
+//   toggleModal();
+//   document.body.style.overflow = "";
+// };
 
-document.querySelector(".consultation__btn").addEventListener("click", () => {
-  toggleModal();
-  document.body.style.overflow = "hidden";
-});
+// document.querySelector(".consultation__btn").addEventListener("click", () => {
+//   toggleModal();
+//   document.body.style.overflow = "hidden";
+// });
 
-document
-  .querySelector(".consultation__form")
-  .addEventListener("submit", (e) => {
-    e.preventDefault();
-    toggleModal();
-  });
-document
-  .querySelector(".modal__close-bar span")
-  .addEventListener("click", () => {
-    closeModal();
-  });
+// document
+//   .querySelector(".consultation__form")
+//   .addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     toggleModal();
+//   });
+// document
+//   .querySelector(".modal__close-bar span")
+//   .addEventListener("click", () => {
+//     closeModal();
+//   });
 
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    closeModal();
-  }
-});
+// modal.addEventListener("click", (e) => {
+//   if (e.target === modal) {
+//     closeModal();
+//   }
+// });
 
-document.addEventListener("keydown", (e) => {
-  if (e.code == "Escape" && !modal.classList.contains("modal__hidden")) {
-    closeModal();
-  }
-});
+// document.addEventListener("keydown", (e) => {
+//   if (e.code == "Escape" && !modal.classList.contains("modal__hidden")) {
+//     closeModal();
+//   }
+// });
 
 //Counter
 

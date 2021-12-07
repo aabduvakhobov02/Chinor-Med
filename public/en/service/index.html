@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chinor Med Center</title>
+    <link rel="icon" href="../../images/small-logo.svg" type="image/icon type">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <section class="preheader">
+        <div class="container">
+          <div class="preheader__inner">
+            <div class="call">
+              <a class="call__link a">
+                <i class="fas fa-phone-square-alt"></i>
+                <p class="call__text">Tel: 555-000-556</p>
+              </a>
+            </div>
+            <div class="preheader__lang">
+              <label class="preheader__lang-label" for="language"
+                >Language</label
+              >
+              <div class="preheader__lang-drop">
+                <p class="preheader__lang-first">English <i class="fas fa-chevron-circle-down"></i></p>
+                <ul class="preheader__lang-list modal__hidden">
+                  <li class="preheader__lang-item">
+                    <a href="../../ru/service">Russian</a>
+                  </li>
+                  <li class="preheader__lang-item">
+                    <a href="../../uz/service">Uzbek</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </section>
+    <header class="header">
+      <div class="container">
+          <div class="header__inner">
+            <a href="../" class="logo a">
+              <img class="logo__img" src="../../images/logo.png" alt="logo" />
+            </a>
+            <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="../">HOME</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="../about">ABOUT US</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="">SERVICES</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="../gallery">GALLERY</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="../news">NEWSLETTER</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link a" href="../contact">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+            <div class="forms">
+              <div class="appointment">
+                <a class="appointment__link a" href="../contact">
+                  <i class="fas fa-notes-medical"></i>
+                  <p class="appointment__text">MAKE AN APPOINTMENT</p>
+                </a>
+              </div>
+              <!-- <div class="consultation">
+                <button class="consultation__btn button">
+                  <i class="fas fa-user-nurse"></i>
+                  <p class="consultation__text">ONLINE CONSULTATION</p>
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- <div class="modal modal__hidden">
+        <div class="modal__contents">
+          <div class="modal__close-bar">
+            <span>
+              <i class="fas fa-times-circle" id="close"></i>
+            </span>
+          </div>
+          <p class="modal__text">
+            Fill the form to recieve an online consultation
+          </p>
+          <form class="consultation__form" action="submit">
+            <input
+            class="consultation__form-name input"
+            type="text"
+            placeholder="Name"
+            />
+            <input
+            class="consultation__form-email input"
+            type="text"
+            placeholder="Email"
+            />
+            <input
+            class="consultation__form-subject input"
+            type="text"
+            placeholder="Subject"
+            />
+            <textarea
+            name="Message"
+            cols="10"
+            rows="10"
+            class="consultation__form-message input"
+            type="text"
+            placeholder="Message"
+            ></textarea>
+            <button class="consultation__form-btn button" type="submit">
+            SUBMIT
+            </button>
+        </form>
+            
+        </div>
+    </div> -->
+    <section class="service">
+        <div class="container">
+            <div class="nav__breadcrumb">
+                <a href="../" class="nav__home a"> HOME  </a>
+                <i class="fas fa-chevron-right"> </i>
+                <a href="" class="nav__current a"> OUR SERVICES </a>
+            </div>
+            <div class="service__inner">
+                <div class="service__navigation">
+                    <ul>
+                        <li class="service__navigation-list active" href="#ps">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Pediatric Plastic Surgery
+                            </a>
+                        </li>
+                        <li class="service__navigation-list"  href="#gs">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                General Surgery
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#ent">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Otolaryngology (ENT)
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#uzi">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Ultrasound Procedure
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#neu">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Neurology
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#ped" >
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Pediatrics
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#car">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Cardiology
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#lab">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Laboratory
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#gyn">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Gynecology
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#to">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Traumatology and Orthopedics
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#end">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Endocrinology
+                            </a>
+                        </li>
+                        <li class="service__navigation-list" href="#oit">
+                            <b></b>
+                            <b></b>
+                            <a class="service__navigation-link">
+                                Outpatient and Inpatient Treatment
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service__content">
+                    <!-- <h1 class="service__title h1 title">Our Services</h1>
+                    <p class="service__text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magni suscipit animi deleniti maxime excepturi, accusantium exercitationem nihil voluptate reprehenderit? Fugiat voluptate aliquid nulla explicabo quasi! Non, vel! Autem, laborum.</p> -->
+                    <div class="service__item">
+                      <span class="service__span" id="ps"></span>
+                      <h2 class="service__item-title h2">Pediatric Plastic Surgery</h2>
+                      <img class="service__item-img" src="../../images/ps.jpg" alt="Plastic Pediatric Surgery">
+                      <p class="service__text">Pediatric plastic surgery is plastic surgery performed on children. Its procedures are most often conducted for reconstructive or cosmetic purposes. In children, this line is often blurred, as many congenital deformities impair physical function as well as aesthetics.
+  
+                        Surgery is defined as treating injuries or conditions with operative instrumental treatment. Plastic is a derivative of the Greek word plastikos, which means "to build up" or "to take form". This is a logical prefix, as parts of the body are remade or reformed during most reconstructive and cosmetic surgical procedures. Children make up roughly 3% of all plastic surgery procedures, and the majority of these procedures correct a congenital deformity.[1]
+                        
+                        Reconstructive plastic surgery is performed on abnormal structures of the body that are the result of congenital defects, developmental abnormalities, trauma, infection, tumors or disease. While reconstructive surgery is most often undertaken to regain normal motor function or prevent current or future health problems, aesthetics is also considered by the surgical team.[2]
+                        
+                        Cosmetic plastic surgery is defined as a surgical procedure undertaken to improve the physical appearance and self-esteem of a patient. These procedures are usually elective.</p>    
+                    </div>
+                    <div class="service__item">
+                      <span class="service__span" id="gs"></span>
+                      <h2 class="service__item-title h2" >General Surgery</h2>
+                      <p class="service__text">General surgery is a surgical specialty that focuses on abdominal contents including esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland (depending on local referral patterns). They also deal with diseases involving the skin, breast, soft tissue, trauma, Peripheral artery disease and hernias and perform endoscopic procedures such as gastroscopy and colonoscopy.</p>
+                    </div>
+                    <div class="service__item">
+                      <span class="service__span" id="ent"></span>
+                      <h2 class="service__item-title h2" >Otolaryngology (ENT)</h2>
+                      <p class="service__text">Otorhinolaryngology is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck. Doctors who specialize in this area are called otorhinolaryngologists, otolaryngologists, head and neck surgeons, or ENT surgeons or physicians.</p> 
+                    </div>
+                    <div class="service__item">
+                      <span class="service__span"id="uzi"></span>
+                      <h2 class="service__item-title h2" >Ultrasound Procedure</h2>
+                    </div>
+                    <div class="service__item">
+                      <span class="service__span"id="neu"></span>
+                      <h2 class="service__item-title h2" >Neurology</h2>
+                      
+                    </div>
+                    <div class="service__item">
+                      <span class="service__span" id="ped"></span>
+                      <h2 class="service__item-title h2" >Pediatrics</h2>
+                      
+                    </div>
+                    <div class="service__item">
+                      <span class="service__span" id=""></span>
+                      <h1 class="service__title h1 title">Services</h1>
+                      
+                      <p class="service__text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magni suscipit animi deleniti maxime excepturi, accusantium exercitationem nihil voluptate reprehenderit? Fugiat voluptate aliquid nulla explicabo quasi! Non, vel! Autem, laborum.</p>
+                    </div>
+                    <div class="service__item">
+                      <span class="service__span" id="gs"></span>
+                      <h1 class="service__title h1 title">Services</h1>
+                      <p class="service__text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magni suscipit animi deleniti maxime excepturi, accusantium exercitationem nihil voluptate reprehenderit? Fugiat voluptate aliquid nulla explicabo quasi! Non, vel! Autem, laborum.</p> 
+                    </div>
+                    <div class="service__item">
+                      <h1 class="service__title h1 title">Services</h1>
+                      <p class="service__text"></p>Lorem ipsum dolor sit amet 
+                      consectetur adipisicing elit. Ut magni suscipit animi
+                      deleniti maxime excepturi, accusantium exercitationem 
+                      nihil voluptate reprehenderit? Fugiat voluptate aliquid
+                       nulla explicabo quasi! Non, vel! Autem, laborum.</p>
+                    </div>
+                    <div class="service__item">
+                      <h1 class="service__title h1 title">Services</h1>
+                      <p class="service__text"></p>Lorem ipsum dolor sit amet 
+                      consectetur adipisicing elit. Ut magni suscipit animi 
+                      deleniti maxime excepturi, accusantium exercitationem nihil 
+                      voluptate reprehenderit? Fugiat voluptate aliquid nulla 
+                      explicabo quasi! Non, vel! Autem, laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <a href="#" class="logo">
+              <img class="logo__img" src="../../images/logo.png" alt="logo" />
+            </a>
+            <p class="footer__info-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ma xime
+              eligendi error repre henderit cupiditate illo recusandae, obc
+            </p>
+            <div class="footer__media">
+              <h4 class="footer__media-title h4">Follow Us At</h4>
+              <div class="footer__media-links">
+                <a href="#" class="footer__media-link a">
+                  <i class="fab fa-facebook footer__media-icon"></i>
+                </a>
+                <a href="#" class="footer__media-link a">
+                  <i class="fab fa-instagram footer__media-icon"></i>
+                </a>
+                <a href="#" class="footer__media-link a">
+                  <i class="fab fa-youtube footer__media-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__timetable">
+            <div class="timetable__item">
+              <p class="timetable__day">Monday</p>
+              <p class="timetable__time">08:00 - 18:00</p>
+            </div>
+            <div class="timetable__item">
+              <p class="timetable__day">Tuesday</p>
+              <p class="timetable__time">08:00 - 18:00</p>
+            </div>
+            <div class="timetable__item">
+              <p class="timetable__day">Wednesday</p>
+              <p class="timetable__time">08:00 - 18:00</p>
+            </div>
+            <div class="timetable__item">
+              <p class="timetable__day">Thursday</p>
+              <p class="timetable__time">08:00 - 18:00</p>
+            </div>
+            <div class="timetable__item">
+              <p class="timetable__day">Friday</p>
+              <p class="timetable__time">08:00 - 18:00</p>
+            </div>
+            <div class="timetable__item">
+              <p class="timetable__day">Saturday</p>
+              <p class="timetable__time">08:00 - 18:00</p>
+            </div>
+            <div class="timetable__item">
+              <p class="timetable__day">Sunday</p>
+              <p class="timetable__time">08:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="footer__menu">
+            <h3 class="footer__menu-title h3">Links</h3>
+            <ul class="footer__list">
+              <li class="footer__menu-item">
+                <a href="../" class="footer__menu-link a"> Home </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="../about" class="footer__menu-link a"> About Us </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link a"> Services </a>
+              </li>
+              
+              <li class="footer__menu-item">
+                <a href="../gallery" class="footer__menu-link a"> Gallery </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="../news" class="footer__menu-link a"> Newsletter </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="../contact" class="footer__menu-link a"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-copyright">© 2021 Chinor Medical Center</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

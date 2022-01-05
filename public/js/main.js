@@ -104,7 +104,7 @@ for (let i = 0; i < list.length; i++) {
 
 //language dropdown
 
-const firstLang = document.querySelectorAll(".preheader__lang-first");
+const firstLang = document.querySelectorAll(".preheader__lang-wrapper");
 const langDrop = document.querySelectorAll(".preheader__lang-list");
 firstLang.forEach((lang) => {
   lang.addEventListener("click", (e) => {
